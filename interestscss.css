@@ -1,23 +1,28 @@
+/* Padding, margin och max bredd för body, h1 och h2 */
 body, h1, h2 {
     margin: 0;
     padding: 0; 
     max-width: 1280px;
-    
 }
-body {background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/405/793/small/minimalist-and-modern-future-hexagon-abstract-geometric-white-and-gray-color-polygon-background-design-illustration-vector.jpg");
+
+/* Bakgrundsbild med max bredd och overflow-egenskaper */
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/405/793/small/minimalist-and-modern-future-hexagon-abstract-geometric-white-and-gray-color-polygon-background-design-illustration-vector.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    }
+}
 
+/* Svart div-stilar */
 .black-div {
     background-color:#CC00FF;
     height: 150px;
-    width: 100% 
+    width: 100%;
 }
 
+/* Rubrikstilar */
 h1 {
     color: #87F675;
     position: relative;
@@ -32,6 +37,7 @@ h2 {
     top: 50px;
 }
 
+/* Cirkelstilar */
 .circle {
     width: 95px;
     height: 95px;
@@ -43,19 +49,22 @@ h2 {
     top: 30px;
 }
 
-.arvind {  width: 94px;
+/* Bildstilar */
+.arvind {
+    width: 94px;
     height: 94px;
     border-radius: 0px;
     border-radius: 50%;
     position: absolute;
     left: 1px;
-    top: 1px;}
-    
+    top: 1px;
+}
 
+/* Hemknappstilar */
 .hem {
     width: 150px;
     height: 35px;
-    background-color: #CC00FF;
+    background-color:#CC00FF;
     border-radius: 25px;
     position: absolute;
     left: 50%;
@@ -80,6 +89,7 @@ h2 {
     bottom: -13px;
 }
 
+/* CV-textstilar */
 .cv-text {
     margin-top: -20px;
     font-size: large;
@@ -87,9 +97,10 @@ h2 {
     line-height: 1.4;
     white-space: pre-line;
     box-sizing: content-box; 
-    font-family:sans-serif 
+    font-family: sans-serif;
 }
 
+/* Hamburgermenystilar */
 .super-hamburger {
     display: flex;
     flex-direction: column;
@@ -130,6 +141,7 @@ label {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* Menystilar efter klick */
 .menu {
     display: none;
     position: absolute;
@@ -164,13 +176,13 @@ label {
     display: block;
 }
 
-/* koden för bilder */
+/* Bildstilar */
 .sekiro {
     width: 120px;
     height: 120px;
     position: fixed;
     left: 900px;
-    bottom: 70px;
+    bottom: 110px;
     border-radius: 20px;
 }
 
@@ -179,7 +191,7 @@ label {
     height: 120px;
     position: fixed;
     left: 750px;
-    bottom: 70px;
+    bottom: 110px;
     border-radius: 20px;
 }
 
@@ -188,7 +200,7 @@ label {
     height: 120px;
     position: fixed;
     left: 1050px;
-    bottom: 70px;
+    bottom: 110px;
     border-radius: 20px;
 }
 
@@ -197,6 +209,6 @@ label {
     height: 120px;
     position: fixed;
     left: 580px;
-    bottom: 70px;
+    bottom: 110px;
     border-radius: 20px;
 }
