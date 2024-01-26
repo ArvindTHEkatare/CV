@@ -2,15 +2,16 @@ body, h1, h2 {
     margin: 0;
     padding: 0; 
     max-width: 1280px;
-    
 }
-body {background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/405/793/small/minimalist-and-modern-future-hexagon-abstract-geometric-white-and-gray-color-polygon-background-design-illustration-vector.jpg");
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/405/793/small/minimalist-and-modern-future-hexagon-abstract-geometric-white-and-gray-color-polygon-background-design-illustration-vector.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    }
+}
 
 .black-div {
     background-color:#CC00FF;
@@ -43,13 +44,15 @@ h2 {
     top: 30px;
 }
 
-.arvind {    width: 93px;
+.arvind {
+    width: 93px;
     height: 93px;
     border-radius: 10px;
     border-radius: 50%;
     position: absolute;
     left: 1px;
-    top: 1px;}
+    top: 1px;
+}
 
 .hem {
     width: 150px;
@@ -207,7 +210,6 @@ label {
     background-color: #45a049;
 }
 
-/* css för bilden under */
 .idnames  {
     width: 30px;
     height: 30px;
@@ -237,7 +239,7 @@ label {
     height: 120px;
     position: fixed;
     left: 1100px;
-    bottom: 60px;
+    bottom: 100px;
     border-radius: 20px;
 }
 
@@ -246,7 +248,7 @@ label {
     height: 120px;
     position: fixed;
     left: 920px;
-    bottom: 60px;
+    bottom: 100px;
     border-radius: 20px;
 }
 
@@ -255,7 +257,7 @@ label {
     height: 120px;
     position: fixed;
     left: 1100px;
-    bottom: 330px;
+    bottom: 370px;
     border-radius: 20px;
 }
 
@@ -264,7 +266,7 @@ label {
     height: 120px;
     position: fixed;
     left: 920px;
-    bottom: 330px;
+    bottom: 370px;
     border-radius: 20px;
 }
 
@@ -273,7 +275,7 @@ label {
     height: 120px;
     position: fixed;
     left: 1100px;
-    bottom: 190px;
+    bottom: 230px;
     border-radius: 20px;
 }
 
@@ -282,6 +284,6 @@ label {
     height: 120px;
     position: fixed;
     left: 920px;
-    bottom: 190px;
+    bottom: 230px;
     border-radius: 20px;
 }
