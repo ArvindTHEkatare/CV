@@ -1,0 +1,174 @@
+/*padding, margin och max width för body, h1 och h2  */
+body, h1, h2 {
+    margin: 0;
+    padding: 0; 
+    max-width: 1280px;
+}
+
+/* background image, med max width och overflow som gör inte det scrollable */
+body {background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/405/793/small/minimalist-and-modern-future-hexagon-abstract-geometric-white-and-gray-color-polygon-background-design-illustration-vector.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
+
+/* en lila rektangel på toppen */
+.black-div {
+    background-color:#CC00FF;
+    height: 150px;
+    width: 100% 
+}
+
+
+h1 {
+    color: #87F675;
+    position: relative;
+    left: 795px;
+    top: 40px;
+}
+
+h2 {
+    color: aliceblue;
+    position: relative;
+    left: 1050px;
+    top: 50px;
+}
+
+/* en liten fin cirkel som min bilden kommer vara inne i*/
+.circle {
+    width: 95px;
+    height: 95px;
+    background-color:blue;
+    border-radius: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 275px;
+    top: 30px;
+}
+
+/* en bild av mig med ingen borders och andra modifering */
+.arvind {    width: 93px;
+    height: 93px;
+    border-radius: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    top: 1px;}
+
+/* kod som innehåller .hem___ är för hemsida knappen */
+.hem {
+    width: 150px;
+    height: 35px;
+    background-color:#CC00FF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 28px;
+}
+
+.hembild {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 15px;
+    bottom: 1px;
+}
+
+.hemtext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #87F675;
+    position: absolute;
+    left: 57px;
+    bottom: -13px;
+}
+
+.cv-text {
+    margin-top: -20px;
+    font-size: large;
+    padding: 40px;
+    line-height: 1.4;
+    white-space: pre-line;
+    box-sizing: content-box; 
+    font-family:sans-serif 
+}
+
+/* koden under är för hamburger meny */
+.super-hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    position: relative;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+/* animation som tar plats efter man trycker på sjävla hamburger knapp */
+#menu-toggle:checked + label .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-toggle:checked + label .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + label .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* koden under för efter man trycker på meny */
+.menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0; 
+    width: auto;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menu-toggle:checked + label + .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+}

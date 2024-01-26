@@ -1,0 +1,287 @@
+body, h1, h2 {
+    margin: 0;
+    padding: 0; 
+    max-width: 1280px;
+    
+}
+body {background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/405/793/small/minimalist-and-modern-future-hexagon-abstract-geometric-white-and-gray-color-polygon-background-design-illustration-vector.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
+
+.black-div {
+    background-color:#CC00FF;
+    height: 150px;
+    width: 100% 
+}
+
+h1 {
+    color: #87F675;
+    position: relative;
+    left: 980px;
+    top: 40px;
+}
+
+h2 {
+    color: aliceblue;
+    position: relative;
+    left: 1050px;
+    top: 50px;
+}
+
+.circle {
+    width: 95px;
+    height: 95px;
+    background-color:blue;
+    border-radius: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 275px;
+    top: 30px;
+}
+
+.arvind {    width: 93px;
+    height: 93px;
+    border-radius: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    top: 1px;}
+
+.hem {
+    width: 150px;
+    height: 35px;
+    background-color: #CC00FF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 28px;
+}
+
+.hembild {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 15px;
+    bottom: 1px;
+}
+
+.hemtext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #87F675;
+    position: absolute;
+    left: 57px;
+    bottom: -13px;
+}
+
+.cv-text {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.2;
+    white-space: pre-line; 
+    padding: 0 50px; 
+}
+
+.super-hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+#menu-toggle:checked + label .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-toggle:checked + label .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + label .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0; 
+    width: auto;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menu-toggle:checked + label + .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 60px 0;
+    margin-left: 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #87F675;
+}
+
+.form-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #45a049;
+}
+
+/* css för bilden under */
+.idnames  {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 710px;
+    top: 230px; 
+}
+
+.email {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 710px;
+    top: 340px; 
+}
+
+.phonenumber {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 710px;
+    top: 395px; 
+}
+
+.insta   {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    left: 1100px;
+    bottom: 60px;
+    border-radius: 20px;
+}
+
+.snap{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    left: 920px;
+    bottom: 60px;
+    border-radius: 20px;
+}
+
+.steam{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    left: 1100px;
+    bottom: 330px;
+    border-radius: 20px;
+}
+
+.github {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    left: 920px;
+    bottom: 330px;
+    border-radius: 20px;
+}
+
+.discord {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    left: 1100px;
+    bottom: 190px;
+    border-radius: 20px;
+}
+
+.battlenet {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    left: 920px;
+    bottom: 190px;
+    border-radius: 20px;
+}
